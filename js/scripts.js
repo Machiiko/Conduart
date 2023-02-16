@@ -6,6 +6,15 @@
 //
 // Scripts
 // 
+document.addEventListener( 'DOMContentLoaded', function() {
+    var splide = new Splide( '.splide',{
+        type   : 'loop',
+        drag   : 'free',
+        focus  : 'center',
+        perPage: 3,
+    });
+    splide.mount();
+  } );
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -55,12 +64,3 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-document.addEventListener( 'DOMContentLoaded', function() {
-    var splide = new Splide( '.splide',{
-        type   : 'loop',
-        drag   : 'free',
-        focus  : 'center',
-        perPage: 3,
-    });
-    splide.mount();
-  } );
